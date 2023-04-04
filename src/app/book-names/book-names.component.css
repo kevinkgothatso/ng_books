@@ -1,0 +1,10 @@
+table{
+    margin-top:10px;
+    width:70% !important;
+    color:white;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-accent-bg: darkred;
+    color: white;
+}

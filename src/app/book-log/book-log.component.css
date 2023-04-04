@@ -1,0 +1,19 @@
+.main {
+    padding: 20px 0px;
+}
+
+.form-control {
+    background-color: black;
+    margin-top: 15px;
+    width: 50%;
+    color: lightslategray;
+}
+
+.btn-submit {
+    color: #000000db !important;
+}
+
+.date {
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+}

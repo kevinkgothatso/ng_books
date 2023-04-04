@@ -7,18 +7,30 @@ import { BookLogComponent } from './book-log/book-log.component';
 import { BookNamesComponent } from './book-names/book-names.component';
 import {HttpClientModule} from "@angular/common/http";
 import {ReactiveFormsModule} from "@angular/forms";
+import { HomeComponent } from './home/home.component';
+import { RouterModule } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from "@angular/material/button";
+import {MatDatepickerModule} from "@angular/material/datepicker";
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
     AppComponent,
     BookLogComponent,
-    BookNamesComponent
+    BookNamesComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule,
+    BrowserAnimationsModule,
+     MatButtonModule,
+     MatDatepickerModule,
+     MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

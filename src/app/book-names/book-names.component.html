@@ -1,5 +1,23 @@
-<div>
-     <ul>
-        <li *ngFor="let book of books">{{book.title}}</li>
-     </ul>
+
+<div class="row">
+   <div class="col">
+      <table class="table table-striped">
+         <thead class="table-header">
+            <tr>
+               <th *ngFor="let bheader of bookTableHeaders">
+                  {{bheader}}
+               </th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr *ngFor="let book of books">
+               <td>{{book.title}}</td>
+               <td>{{book.aurther}}</td>
+               <td>{{book.date}}</td>
+               <td>{{book.rates}}</td>
+            </tr>
+         </tbody>
+      </table>
+
+   </div>
 </div>

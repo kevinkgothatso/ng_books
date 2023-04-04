@@ -21,6 +21,7 @@ export class BookLogComponent {
   constructor(private bookService: BooksService){}
 
   postBookNames(){
-      this.bookService.postABoook(this.booksForm);
+    console.log(this.booksForm);
+      // this.bookService.postABoook(this.booksForm);
   }
 }

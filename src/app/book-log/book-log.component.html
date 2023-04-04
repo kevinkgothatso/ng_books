@@ -1,9 +1,14 @@
-<div>
+<div class="main">
     <form [formGroup]="booksForm" (ngSubmit)="postBookNames()">
-           <input type="text" placeholder="Book title">
-           <input type="text" placeholder="Book aurther">
-           <input type="text" placeholder="Book title">
-           <input type="date" placeholder="Select date book was composed">
-           <input type="submit" value="Register Book Name" >
+        <div class="row">
+            <div class="col">
+                <input class="form-control" type="text" placeholder="Book title">
+                <input class="form-control" type="text" placeholder="Book aurther">
+                <input class="form-control" type="text" placeholder="Book title">
+                <input class="form-control date" type="date" placeholder="Select date book was composed">
+
+                <input class="btn-submit form-control" type="submit" value="Register Book Name">
+            </div>
+        </div>
     </form>
 </div>

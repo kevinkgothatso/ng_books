@@ -7,14 +7,16 @@ import { Books } from './books';
   providedIn: 'root'
 })
 export class BooksService {
-  url: any = "";
+
+  url: any = "http://localhost:4000";
+
   constructor(private http: HttpClient) { }
 
   getAllBooks():Observable<Books[]>{
-     return this.http.get<Books[]>(this.url);
+     return this.http.get<Books[]>(`${this.url}/books`);
   }
 
   postABoook(book: any){
-      return this.http.post<Books>(this.url, book);
+      // return this.http.post<Books>(this.url, book);
   }
 }

@@ -9,10 +9,12 @@ import { BooksService } from '../books.service';
 })
 export class BookNamesComponent implements OnInit{
     books: any;
+    bookTableHeaders: any[] =["title","aurther","date","rates"];
 
     getAllBooks(){
         this.bookService.getAllBooks().subscribe((data)=>{
              this.books = data;
+             console.log(this.books);
         })
     }
 
