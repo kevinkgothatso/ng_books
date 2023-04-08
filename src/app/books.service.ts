@@ -8,15 +8,15 @@ import { Books } from './books';
 })
 export class BooksService {
 
-  url: any = "http://localhost:4000";
+  url: any = "http://localhost:4000/books";
 
   constructor(private http: HttpClient) { }
 
   getAllBooks():Observable<Books[]>{
-     return this.http.get<Books[]>(`${this.url}/books`);
+     return this.http.get<Books[]>(`${this.url}`);
   }
 
-  postABoook(book: any){
-      // return this.http.post<Books>(this.url, book);
+  postABoook(book:any): Observable<any>{
+      return this.http.post<any>(`${this.url}/new`, book);
   }
 }

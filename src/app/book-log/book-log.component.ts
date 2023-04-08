@@ -9,7 +9,6 @@ import { BooksService } from '../books.service';
   styleUrls: ['./book-log.component.css']
 })
 export class BookLogComponent {
-  date: Date = new Date();
 
   booksForm = new FormGroup({
     title: new FormControl(),
@@ -21,7 +20,9 @@ export class BookLogComponent {
   constructor(private bookService: BooksService){}
 
   postBookNames(){
-    console.log(this.booksForm);
-      // this.bookService.postABoook(this.booksForm);
+    console.log(this.booksForm.value);
+      console.log(this.booksForm.value);
+      this.bookService.postABoook(this.booksForm.value).subscribe(()=>{
+      });
   }
 }

@@ -10,7 +10,18 @@
 }
 
 .btn-submit {
-    color: #000000db !important;
+    color: #b4bcc5 !important;
+    background-color: black !important;
+    border-radius: 18px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+}
+
+.btn-submit:hover{
+    /* border-color:black !important; */
+    color:black !important;
+    background-color: white !important;
 }
 
 .date {

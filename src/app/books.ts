@@ -1,6 +1,6 @@
 export interface Books {
     title: String,
     aurther: String,
-    date: Date
+    date: String,
     rates: String
 }
