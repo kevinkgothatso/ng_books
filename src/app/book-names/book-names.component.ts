@@ -14,7 +14,6 @@ export class BookNamesComponent implements OnInit{
     getAllBooks(){
         this.bookService.getAllBooks().subscribe((data)=>{
              this.books = data;
-             console.log(this.books);
         })
     }
 

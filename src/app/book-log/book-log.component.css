@@ -19,7 +19,11 @@
 }
 
 .btn-submit:hover{
-    /* border-color:black !important; */
+    color:black !important;
+    background-color: white !important;
+}
+
+.btn-submit:active{
     color:black !important;
     background-color: white !important;
 }

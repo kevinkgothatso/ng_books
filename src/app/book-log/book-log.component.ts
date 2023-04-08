@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Books } from '../books';
 import { BooksService } from '../books.service';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-book-log',
@@ -17,12 +18,13 @@ export class BookLogComponent {
     rates: new FormControl()
   });
 
-  constructor(private bookService: BooksService){}
+  constructor(private bookService: BooksService, private router: Router){}
 
   postBookNames(){
-    console.log(this.booksForm.value);
-      console.log(this.booksForm.value);
-      this.bookService.postABoook(this.booksForm.value).subscribe(()=>{
+      this.bookService.postABoook(this.booksForm.value).subscribe((res)=>{
+            if(res.success){
+              this.router.navigate(['/home/book-names']);
+            }
       });
   }
 }
