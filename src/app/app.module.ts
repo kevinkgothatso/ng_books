@@ -13,15 +13,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from "@angular/material/button";
 import {MatDatepickerModule} from "@angular/material/datepicker";
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { TempComponent } from './temp/temp.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BookLogComponent,
     BookNamesComponent,
-    HomeComponent,
-    TempComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,

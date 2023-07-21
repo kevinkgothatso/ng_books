@@ -12,7 +12,8 @@ export class HomeComponent implements OnInit {
   constructor(private route: Router, private routerActive: ActivatedRoute) {
   }
   ngOnInit(): void {
-
+    this.route.navigate(['book-names'], { relativeTo: this.routerActive });
+    
     this.route.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         this.currentRoute = event.url;
