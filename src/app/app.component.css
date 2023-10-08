@@ -1,23 +1,13 @@
-p{
+p {
     font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
 }
 
-.title > span{
-    font-weight: 900;
-    font-size: 30px;
-    margin-left: 5px;
-}
-
-.title{
+.title {
     padding-top: 50px;
 }
 
-.main{
-    padding-left: 10px;
-    padding-right:10px;
-}
-
-.title-sm{
-    padding-left: 10px;
-    color: lightslategray;
+.main {
+    padding-left: 3%;
+    padding-right: 10px;
 }

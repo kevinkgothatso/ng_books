@@ -17,6 +17,7 @@ export class BooksService {
   }
 
   postABoook(book:any): Observable<any>{
+    console.log(book);
       return this.http.post<any>(`${this.url}/new`, book);
   }
 }

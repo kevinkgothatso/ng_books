@@ -1,13 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
-
-html, body {
+ 
+ body {
      height: 100%; 
      background-color: black;
      color:white;
+     margin: 0 !important; 
+     font-family: Roboto, "Helvetica Neue", sans-serif;
     }
-body { 
-    margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
- }
+
 
  input[type=submit]{
     font-family: sans-serif;
@@ -20,3 +19,11 @@ body {
     color: white;
     background-color: orangered;
 }
+
+.left-align{
+ padding-left: 3%;
+} 
+
+/* body{
+   background-color: #0000ff40;
+} */

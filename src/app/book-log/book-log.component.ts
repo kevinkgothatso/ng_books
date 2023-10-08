@@ -21,10 +21,12 @@ export class BookLogComponent {
   constructor(private bookService: BooksService, private router: Router){}
 
   postBookNames(){
+   console.log(this.booksForm.value);
       this.bookService.postABoook(this.booksForm.value).subscribe((res)=>{
-            if(res.success){
+            if(res.message = "success"){
               this.router.navigate(['/home/book-names']);
             }
       });
+      
   }
 }

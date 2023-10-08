@@ -1,10 +1,32 @@
 table{
     margin-top:15px;
-    width:70% !important;
-    color:white;
+    width:80% !important;
+     color:white; 
 }
 
 .table-striped>tbody>tr:nth-of-type(odd)>* {
     --bs-table-accent-bg: #ffffffe3;
     color: black;
 }
+
+/* ============ Responsive design ================= */
+
+@media screen and (max-width: 398px) {
+    table {
+    width:100% !important;
+    }
+    .table-con-1{
+        display: table;
+        table-layout: fixed;
+        width: 350px;
+
+    }
+
+    .table-con-2{
+        display: table-cell;
+        overflow-x: auto;
+        width: 100%;
+      }
+}
+
+

@@ -2,11 +2,19 @@
     color: white !important;
     width:200px !important;
     font-size: 16.5px;
-
     font-family: sans-serif !important;
     background-color: orangered !important;
 }
 
 .btn-route:first-child{
-    margin-right: 10px;
+     margin-right: 10px; 
+} 
+
+
+/* ============ Responsive design ================= */
+
+@media screen and (max-width:438px) {
+    .btn-route:last-child{
+       margin-top:2%;
+    }
 }
